@@ -27,6 +27,12 @@ def analyze_logs(file_path):
                 alerts.append(f"[HIGH] {ip} - Brute force suspected ({count} attempts)")
             elif count == 2:
                 alerts.append(f"[MEDIUM] {ip} - Suspicious activity")
+            elif count >= 5:
+                alerts.append(f"[CRITICAL] {ip} - Severe brute force ({count})")
+            elif count >= 3:
+                alerts.append(f"[HIGH] {ip}")
+            elif count == 2:
+                alerts.append(f"[MEDIUM] {ip}")
 
         return alerts
 
@@ -48,7 +54,9 @@ if __name__ == "__main__":
 
     log_file = sys.argv[1]
     alerts = analyze_logs(log_file)
-
+    print("\n--- SUMMARY ---")
+    print(f"Total suspicious IPs: {len(failed_attempts)}")
+    print(f"Total alerts generated: {len(alerts)}")
     print("\n--- SECURITY ALERTS ---")
     for alert in alerts:
         print(alert)
