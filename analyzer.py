@@ -60,5 +60,4 @@ if __name__ == "__main__":
     print("\n--- SECURITY ALERTS ---")
     for alert in alerts:
         print(alert)
-
     save_alerts(alerts)
