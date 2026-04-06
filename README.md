@@ -5,6 +5,10 @@ This project simulates a Security Operations Center (SOC) log analysis tool.
 It detects suspicious login activity and potential brute-force attacks.
 
 ## ⚙️ Features
+- Detects brute-force attacks
+- Classifies threats (LOW, MEDIUM, HIGH, CRITICAL)
+- Generates security alerts
+- Simulates SOC log analysis workflow
 - Parses real-time log data
 - Detects failed login attempts
 - Identifies brute-force attacks
