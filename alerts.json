@@ -1,0 +1,13 @@
+[
+    "[CRITICAL] 111.111.111.111 - Severe brute force (6 attempts)",
+    "[HIGH] 192.168.1.20 - Brute force suspected (3 attempts)",
+    "[HIGH] 10.0.0.5 - Brute force suspected (4 attempts)",
+    "[HIGH] 192.168.1.60 - Brute force suspected (3 attempts)",
+    "[HIGH] 10.10.10.11 - Brute force suspected (3 attempts)",
+    "[HIGH] 8.8.8.8 - Brute force suspected (4 attempts)",
+    "[HIGH] 203.0.113.5 - Brute force suspected (4 attempts)",
+    "[HIGH] 198.51.100.11 - Brute force suspected (3 attempts)",
+    "[HIGH] 192.0.2.25 - Brute force suspected (4 attempts)",
+    "[MEDIUM] 172.16.0.3 - Suspicious activity",
+    "[MEDIUM] 192.168.100.2 - Suspicious activity"
+]
